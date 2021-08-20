@@ -1,0 +1,11 @@
+name: 'Print Inside Composite step'
+description: 'prints inside a composite step and also install node just to see when post job cleanup will occur'
+runs:
+  using: "composite"
+  steps: 
+    - name: Install Node js
+      run: actions/setup-node@v1
+      
+    - name: Run print 
+      run: echo Print inside composite steps
+      
