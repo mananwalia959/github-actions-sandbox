@@ -35,7 +35,7 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
       - name: Run Composite steps
-        uses: ./.github/custom-actions/custom-action
+        uses: ./.github/custom-actions
        # Runs last csript
       - name: Run a one-line script
         run: echo Last Hello, world!

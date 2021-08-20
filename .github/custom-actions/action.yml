@@ -5,7 +5,9 @@ runs:
   steps: 
     - name: Install Node js
       run: actions/setup-node@v1
+      shell: bash
       
     - name: Run print 
       run: echo Print inside composite steps
+      shell: bash
       
